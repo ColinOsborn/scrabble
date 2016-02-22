@@ -14,4 +14,10 @@ class ScrabbleTest < Minitest::Test
     assert_equal 7, Scrabble.new.score("shit")
     assert_equal 22, Scrabble.new.score("QUIZ")
   end
+
+  def test_it_likes_f1_names
+    assert_equal 9, Scrabble.new.score("Vettel")
+    assert_equal 6, Scrabble.new.score("Alonso")
+    assert_equal 17, Scrabble.new.score("Raikkonen")
+  end
 end
