@@ -2,10 +2,11 @@ class Scrabble
 
   def score(word)
     @word = word
-    letters = word.upcase.split(" ")
+    letters = word.upcase.chars
+
     total = 0
 
-    letters.each do |letter|
+    letters.map do |letter|
       total += point_values[letter]
     end
       total
@@ -23,3 +24,7 @@ class Scrabble
     }
   end
 end
+#
+# puts Scrabble.new.score("a")
+# puts Scrabble.new.score("Y")
+# puts Scrabble.new.score("a")

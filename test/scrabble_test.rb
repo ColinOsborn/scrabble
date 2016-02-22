@@ -10,8 +10,8 @@ class ScrabbleTest < Minitest::Test
     assert_equal 4, Scrabble.new.score("f")
   end
 
-  # def test_it_can_be_a_full_word
-  #   assert_equal 7, Scrabble.new.score("shit")
-  #   assert_equal 22, Scrabble.new.score("QUIZ")
-  # end
+  def test_it_can_be_a_full_word
+    assert_equal 7, Scrabble.new.score("shit")
+    assert_equal 22, Scrabble.new.score("QUIZ")
+  end
 end
