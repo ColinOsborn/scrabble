@@ -20,4 +20,5 @@ class ScrabbleTest < Minitest::Test
     assert_equal 6, Scrabble.new.score("Alonso")
     assert_equal 17, Scrabble.new.score("Raikkonen")
   end
+
 end
