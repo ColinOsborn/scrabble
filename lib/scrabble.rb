@@ -1,6 +1,14 @@
 class Scrabble
+
   def score(word)
-    0
+    @word = word
+    letters = word.upcase.split(" ")
+    total = 0
+
+    letters.each do |letter|
+      total += point_values[letter]
+    end
+      total
   end
 
   def point_values
