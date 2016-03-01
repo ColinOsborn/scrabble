@@ -1,5 +1,4 @@
 class Scrabble
-
   def score(word)
     @word = word
     letters = word.upcase.chars
